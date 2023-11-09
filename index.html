@@ -1,27 +1,30 @@
 <html>
 
-<head> 
-	<title>Open URL</title>
+<head>
+    <title>Open URL in New Tab </title>
 </head>
 
 <body>
 
-	
-<p> Click the button to open 
-		<b> SpC app </b>
-</p>
 
+    <p> Click the button to open
+        <b> SpC App </b>
+        in new tab
+    </p>
 
-	<button onclick="NewTab()">
-		Open Geeksforgeeks
-	</button>
+    <button><a href="intent:#Intent;action=com.example.spc;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;S.msg_from_browser=Launched%20from%20Browser;end">Click this link to launch you app from web</a></button>
+    </br>
+    </br>
+    <button onclick="NewTab()">
+        Open SpC App
+    </button>
 
-	<script>
-		function NewTab() {
-			window.open(
-			"https://shafayatenosis.github.io", "_blank");
-		}
-	</script>
+    <script>
+        function NewTab() {
+        	window.open(
+        	"https://shafayatenosis.github.io", "_blank");
+        }
+    </script>
 
 </body>
 
